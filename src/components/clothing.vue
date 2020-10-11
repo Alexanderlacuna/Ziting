@@ -1,16 +1,14 @@
 <template>
   <div>
-   <story/>
+      <div>
+          
+      </div>
+     
   </div>
 </template>
 
 <script>
-import story  from "@/components/story.vue"
 export default {
-
-  components:{
-    story
-  }
 
 }
 </script>

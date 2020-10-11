@@ -1,32 +1,50 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <v-app>
+   <div>
+      <div>
+      <!-- <router-link to = "/home">Router Link 1</router-link>
+       -->
+      <!-- <div class="fixed z-50 w-screen bg-white shadow-lg">
+         <navbar/>
+      </div> -->
+      <!-- <navigation/> -->
+       <navbar/>
     </div>
-    <router-view />
-  </div>
+    <div>
+      <router-view></router-view>
+        
+     
+    </div>
+
+  
+    
+   </div>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import navigation from "@/components/navigation.vue"
+import navbar from "@/components/navbar.vue"
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+export default {
+  name: "App",
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+  components: {
+     navbar
+    //  navigation
+  },
+
+  data: () => ({
+    //
+  })
+};
+</script>
+<style scoped>
+.control-footer{
+  position: absolute;
+  width:100%;
+  bottom: 0;
+  background: red;
 }
 </style>
